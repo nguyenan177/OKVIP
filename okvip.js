@@ -40,7 +40,7 @@
   function getWithdrawPassword() { return localStorage.getItem("okvip_withdraw_password") || ""; }
 
   // ===== SYNC CONFIG: Firestore → localStorage (chạy khi inject) =====
-  const FIRESTORE_SETTINGS_URL = "https://firestore.googleapis.com/v1/projects/project-firebase-49d8c/databases/(default)/documents/settings/apiKeys?key=AIzaSyAX7fGf0f0gj6AVcwLC6To-Zpv0tgR0UI4";
+  const FIRESTORE_SETTINGS_URL = "https://firestore.googleapis.com/v1/projects/phoenix-e39b4/databases/(default)/documents/settings/apiKeys?key=AIzaSyA5qOQw0e-ool6kF68fpUXbvNtfSeVhFJ8";
   async function fetchRTDBSettings() {
     // 1. Firestore cũ (có password đầy đủ)
     try {

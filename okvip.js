@@ -84,13 +84,13 @@
   // ===== END SYNC CONFIG =====
 
   const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyAX7fGf0f0gj6AVcwLC6To-Zpv0tgR0UI4",
-    projectId: "project-firebase-49d8c"
+    apiKey: "AIzaSyA5qOQw0e-ool6kF68fpUXbvNtfSeVhFJ8",
+    projectId: "phoenix-e39b4"
   };
   const FIREBASE_CONFIG_NEW = {
-    apiKey: "AIzaSyBnk8d_B5wuDRAkSfePsuVmmpZqDh4TS7c",
-    projectId: "sv1111",
-    databaseURL: "https://sv1111-default-rtdb.firebaseio.com"
+    apiKey: "AIzaSyA5qOQw0e-ool6kF68fpUXbvNtfSeVhFJ8",
+    projectId: "phoenix-e39b4",
+    databaseURL: "https://phoenix-e39b4-default-rtdb.firebaseio.com"
   };
 
   const FIELD_KEYWORDS = {

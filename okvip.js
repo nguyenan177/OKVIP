@@ -3156,11 +3156,11 @@
       menu.innerHTML = `
         <div style="${LABEL_CSS}margin-top:0;">👤 Tài khoản cứng</div>
         <input id="__mk_fab_user__" type="text" style="${INPUT_CSS}"/>
-        <button id="__mk_fab_user_save__" type="button" style="${SAVEBTN_CSS}background:#f60;">💾 Lưu & Điền TK</button>
+        <button id="__mk_fab_user_save__" type="button" style="${SAVEBTN_CSS}background:#f60;">💾 Lưu</button>
 
         <div style="${LABEL_CSS}">📱 SĐT cứng</div>
-        <input id="__mk_fab_phone__" type="text" placeholder="Nhập số điện thoại..." style="${INPUT_CSS}"/>
-        <button id="__mk_fab_phone_save__" type="button" style="${SAVEBTN_CSS}background:#8b5cf6;">💾 Lưu & Điền SĐT</button>
+        <input id="__mk_fab_phone__" type="text" style="${INPUT_CSS}"/>
+        <button id="__mk_fab_phone_save__" type="button" style="${SAVEBTN_CSS}background:#8b5cf6;">💾 Lưu</button>
 
         <div style="height:1px;background:#2a2a3e;margin:8px 0;"></div>
         <div style="${LABEL_CSS}margin-top:0;">⚡ Tốc độ điền</div>
@@ -3204,10 +3204,7 @@
         if (!val) { showToast("⚠️ Nhập tài khoản trước", "error"); return; }
         try { localStorage.setItem("okvip_hard_username", val); } catch(err) {}
         try { chrome.storage.local.set({ okvip_hard_username: val }); } catch(err) {}
-        const el = getUsernameInput();
-        if (el) fillInput(el, val);
-        showToast("👤 Đã lưu & điền TK: " + val, "success");
-        closeMenu();
+        showToast("👤 Đã lưu TK: " + val, "success");
       });
 
       menu.querySelector("#__mk_fab_phone_save__").addEventListener("click", async (e) => {
@@ -3216,10 +3213,7 @@
         if (!val) { showToast("⚠️ Nhập số điện thoại trước", "error"); return; }
         try { localStorage.setItem("okvip_hard_phone", val); } catch(err) {}
         try { chrome.storage.local.set({ okvip_hard_phone: val }); } catch(err) {}
-        const el = findPhoneInput();
-        if (el) fillInput(el, val);
-        showToast("📱 Đã lưu & điền SĐT: " + val, "success");
-        closeMenu();
+        showToast("📱 Đã lưu SĐT: " + val, "success");
       });
     }
     buildMenu();
